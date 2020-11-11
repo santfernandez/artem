@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTEM - Talleres de Arte y Cultura</title>
+    <link rel="stylesheet" media=" only screen and (max-width: 479px)" href="./css/mobile.css">
+    <link rel="stylesheet" media=" only screen and (min-width:480px) and (max-width: 990px)" href="./css/tablet.css">
+    <link rel="stylesheet" media=" only screen and (min-width: 991px)" href="./css/desktop.css">
+</head>
+<body id="app">
+    <header>
+            <div class="menu-wrap">
+              <input type="checkbox" class="toggler-nav">
+              <div class="hamburger"><div></div></div>
+              <div class="menu">
+                <div class="menu-container">
+                  <div class="menu-logo">
+                      <img src="./img/header-isologo.png" alt="artem" class="logo-header">
+                  </div>
+                  <div class="menu-ul-container">
+                    <ul class="menu-ul">
+                      <li><a href="#artem"><input type="checkbox" class="toggler-artem">Quienes Somos</a></li>
+                      <li><input type="checkbox" class="toggler-nav"><a href="#talleres">Talleres</a></li>
+                      <li><input type="checkbox" class="toggler-nav"><a href="#footer">Contacto</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu-icons">
+                    <a  class="fb-icon-header" target="_blank" href="https://www.facebook.com/pages/category/Education/ARTEM-1720993661297224/"><img src="./icons/icono-fb.png" alt="Ícono Facebook" class="fb-icon-img-h"></a>
+                    <a  class="ig-icon-header" target="_blank" href="https://www.instagram.com/artemtalleres/"><img src="./icons/icono-ig.png" alt="Ícono Instagram" class="ig-icon-img-h"></a>
+                    <a  class="wp-icon-header" target="_blank" href="https://wa.link/dlzoez"><img src="./icons/icono-wsp.png" alt="Ícono WhatsApp" class="wp-icon-img-h"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </header>
+    <main>
+        <section id="landing">
+            <div class="landing-container">
+                <div class="front-img-container">
+                    <img src="./img/main-logo.png" class="front-img" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="artem">
+            <div class="artem-container">
+                <div class="institutional-info-container">
+                    <div class="institutional-info-colA">
+                        <img src="./img/header-isologo.png" alt="ARTEM" class="artem-logo-institucional">
+                    </div>
+                    <div class="institutional-info-colB">
+                        <p>Es un centro educativo para todas las edades donde podés descubrir y desarrollar tus capacidades artísticas mediante actividades que estimulan el aprendizaje y la creatividad. </p>
+                    </div>
+                    <div class="institutional-info-colC">
+                        <div class="directora"><img src="./icons/icon-dir.png" alt="directora" class="directora-img"></div>
+                        <div class="vicedirectora"><img src="./icons/icon-vice.png" alt="vicedirectora" class="vicedirectora-img"></div>
+                        <div class="sec-acad"><img src="./icons/icon-acad.png" alt="secretaria académica" class="sec-acad-img"></div>
+                        <div class="sec-adm"><img src="./icons/icon-adm.png" alt="secretaria administrativa"
+                        class="sec-adm-img"></div>
+                    </div>
+                </div>
+        </section>
+        <section id="talleres" class="talleres-container">
+            <div class="talleres">
+                <h2>TALLERES</h2>
+                <div class="talleres-flex">
+                    <div class="card card-m" onclick="justChecking(event);">
+                        <picture>
+                            <source media="(max-width: 990px)" srcset="./img/img-musica-small.jpg" class="img-talleres">
+                            <source media="(min-width: 990px)" srcset="./img/img-musica-large.jpg" class="img-talleres">
+                            <img class="img-talleres" src="./img/img-musica-large.jpg" alt="">
+                        </picture>
+                        <div id="info" class="info">
+                            <h3 class="h3">Música</h3>
+                            <p class="p">Acordeón<br>Bajo Eléctrico<br>Canto<br>Flauta Dulce<br>Flauta Traversa<br>Guitarra<br>Percusión<br>Piano<br>Ukelele<br>Violín<br>Viola<br>Violoncello
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card card-a-p" onclick="justChecking(event);">
+                        <img class="img-talleres" src="./img/img-artes-plastica.jpg" alt="">
+                        <div id="infoAP" class="info">
+                            <h3 class="h3">Artes Plásticas</h3>
+                            <p class="p">Arte (Niños, Adolescentes, Adultos)<br>Cerámica<br>Dibujo a Lápiz<br>Grabado<br>Mix Media<br>Monotipo<br>Mosaico<br>Pintura Artística para Niños<br>Pintura<br>Reciclado Artístico para Niños<br>Serigrafía<br>Xilografía
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card card-a-v"
+                    onclick="justChecking(event);">
+                        <img class="img-talleres" src="./img/img-artes-visuales.jpg" alt="">
+                        <div id="infoAV" class="info">
+                            <h3 class="h3">Artes Gráficas</h3>
+                            <p class="p">Diseño Gráfico<br>Fotografía<br>Modelado 3D</p>
+                        </div>
+                    </div>
+                    <div class="card card-i"
+                    onclick="justChecking(event);">
+                        <picture data-open="infoI">
+                            <source media="(max-width: 480px)" srcset="./img/img-idioma-480w.jpg">
+                            <source media="(max-width: 990px)" srcset="./img/img-idioma-660w.jpg">
+                            <source media="(min-width: 990px)" srcset="./img/img-idioma-990w.jpg">
+                            <img class="img-talleres" src="./img/img-idioma-990w.jpg" alt="">
+                        </picture>
+                            <div id="infoI" class="info">
+                                <h3 class="h3">Idiomas</h3>
+                                <p class="p">Francés</p>
+                                <p class="p">Inglés</p>
+                            </div>
+                    </div>
+                    <div class="card card-o"
+                    onclick="justChecking(event);">
+                        <img class="img-talleres" src="./img/img-otros.jpg" alt="">
+                        <div id="infoO" class="info">
+                            <h3 class="h3">Otros</h3>
+                            <p class="p">Decoración de Eventos<br>Encuadernación Artesanal<br>Tejido Crochet<br>Tejido Dos Agujas</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <div id="modal"></div>
+    </main>
+    <footer id="footer">
+       <div class="footer">
+            <div class="contact-info-container">
+                <h3 class="contact-info-h3">Contacto</h3>
+            <ul>
+                <li class="contact-info-email">Email: artemclass18@gmail.com</li>
+                <li class="contact-info-phone">Tel.: (0381) 154386700</li>
+                <li class="contact-info-adress">Dirección: Pedro Medrano 550, San Miguel de Tucumán</li>
+            </ul>
+            </div>
+            <div class="icons-footer">
+                <a  class="fb-icon" target="_blank" href="https://www.facebook.com/pages/category/Education/ARTEM-1720993661297224/"><img src="./icons/facebook-2.svg" alt="Ícono Facebook" class="fb-icon-img"></a>
+                <a  class="ig-icon" target="_blank" href="https://www.instagram.com/artemtalleres/"><img src="./icons/instagram-2.svg" alt="Ícono Instagram" class="ig-icon-img"></a>
+                <a  class="wp-icon" target="_blank" href="https://wa.link/dlzoez"><img src="./icons/whatsapp-2.svg" alt="Ícono WhatsApp" class="wp-icon-img"></a>
+           </div>
+           <div class="extra-space"></div>
+           <script type="text/javascript" src="./js/main.js"> </script>
+       </div>
+    </footer>
+</body>
+</html>
